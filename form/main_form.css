@@ -1,0 +1,243 @@
+
+  /* //////////////////////////////////////////////////////////////// */
+.Content{
+    z-index: 1;
+    margin-top: 80px;
+    display: flex;
+    min-height: 900px;
+    background-color: #0c0c0c;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+}
+
+.container{
+ width: 500px;
+height: 700px;
+display: flex;
+flex-direction: column;
+background: url(../img/resize.jpg);
+justify-content: center;
+align-items: center;
+background-position: center;
+background-size: cover;
+border-radius: 50px;
+
+position: relative;
+
+}
+.backgr{
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    box-shadow: 10px 10px 20px black;
+
+    background: linear-gradient(30deg, rgb(249, 202, 36) 50%, rgba(0,212,255,0) 100%);
+}
+
+.Form{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.Form h2{
+font-size: 35px;
+}
+.h-text{
+    width: max-content;
+}
+.TextForm{
+    font-size: 27px;
+}
+
+.inputs{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.inputs .pole{
+    width: 90%;
+}
+.inputs input{
+  
+   background: none;
+   outline: none;
+   border: none;
+   height: 40px;
+   color: black;
+   font-size: 20px;
+}
+.inputs input::-webkit-input-placeholder 
+{color:black;}
+  
+
+.inputs hr{
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 0;
+}
+/* ///////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////// */
+.Checks{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    position: relative;
+    width: 90%;
+}
+.check{
+   display: flex; 
+   flex-direction: row;
+position: relative;
+  width: 90%;
+  box-shadow: 0 6px 10px rgb(249, 202, 36) ;
+  background-color:rgb(249, 202, 36) ;
+  padding-bottom: 5px;
+}
+.ch1{
+    z-index: 3;
+}
+.check label{
+    width: 25px;
+    height: 25px;
+   
+    background-color: white;
+    margin-right: 20px;
+display: inline-block;
+margin-left: 30px;
+display: none;
+}
+
+.check input[type='checkbox']{
+  /* display: none; */
+  width: 25px;
+    height: 25px;
+  position: relative;
+  -webkit-appearance: none;
+  margin-right: 15px;
+    border: 3px solid black;
+    border-radius: 5px;
+
+   
+background-color: white;
+
+    outline: none;
+}
+.check.ch1 input[type='checkbox']:checked,
+.check.ch2 input[type='checkbox']:checked {
+background-color: black;
+
+}
+.check.ch1 input[type='checkbox']::after,
+.check.ch2 input[type='checkbox']::after {
+
+   background-image: url(../img/done_black_24dp.svg);
+background-size: 25px;
+background-position: center;
+ position: absolute;
+   content: "";
+   width: 100%;
+   height: 100%;
+  display: none;
+}
+.check.ch1 input[type='checkbox']:checked::after,
+.check.ch2 input[type='checkbox']:checked::after{
+display: block;
+}
+.check p{
+font-size: 20px;
+}
+.ch2{
+    display: flex;
+    position: absolute;
+    
+    flex-direction: row;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+.check.ch2.active{
+  
+margin-top: 40px;
+
+}
+.buttons{
+    margin-top: 30px;
+    width: 70%;
+    height: 60px;
+
+}
+
+.button{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+     overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: 2px solid transparent;
+
+    cursor: pointer;
+}
+.button a{
+    text-decoration: none;
+    color: rgb(249, 202, 36);
+    font-size: 25px;
+    text-align: center;
+    z-index: 6;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+
+  /* //////////////////////////////////////////////////////////////// */
+
+
+  /* //////////////////////////////////////////////////////////////// */
+footer{
+    height: 300px;
+    background-color: black;
+}
+.Foot_Text{
+color: white;
+width: 25%;
+margin-left: 30px;
+
+}
+.Foot_Text hr{
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.Foot_T{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.Foot_Text nav ul{
+  flex-direction: column;
+  align-items: baseline;
+} 
+.Foot_Text nav ul li{
+    border: none;
+    font-size: 20px;
+    justify-content: flex-start;
+    padding-left: 0;
+}
